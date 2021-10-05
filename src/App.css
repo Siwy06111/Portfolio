@@ -3,7 +3,8 @@
   margin:0;
   padding: 0;
   font-family: 'Gemunu Libre', sans-serif;
-  
+  list-style-type: none;
+  color: white;
 }
 html{
   background-color: white;
@@ -13,8 +14,8 @@ div.About{
   width: 100vw;
   background-color: #343434;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-basis: 50%;
 }
 
 .LeftSide{
@@ -22,31 +23,68 @@ div.About{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 .LeftSide>p {
   color: white;
   font-size: 10vh;
-
+  letter-spacing: 3px;
 }
-.RightSide{
-
-}
-
 .AboutBtn{
   font-size: 20px;
-  border-radius: 0%;
   padding: 10px 40px;
   margin-top: 50px;
   background-color: white;
   border: 2px solid black ;
   position: relative;
   transition: linear 0.1s;
+  
+  }
+  .AboutBtn>p,i{
+    color:black;
   }
   
-  .AboutBtn:hover{
+.AboutBtn:hover{
     transform:scale(1.1);
     box-shadow: 0px 0px 33px 9px rgba(0,0,0,0.36);
-    
-  }
+    cursor: pointer;
+   
+}
+.RightSide{
+  
+}
+.NavBar{
+  position:fixed; 
+  
+  right: 5%;
+  top: 50%;
+  transform:translateY(-50%);
+  height: 100%;
+}
+.NavBar>ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.NavBar>ul>li{
+width:1.1vw;
+ height: 10vh;
+ border: 3px solid black;
+ transition:0.2s ease-in-out;
+}
+.NavBar>ul>li:hover{
+  background-color: darkgray;
+  scale: 1.1;
+  cursor: pointer;
+  position: relative;
+}
+.NavBar>ul>li:hover::after{
+display: block;
+content: "O mnie";
+position: absolute;
+top: 50%;
+left:-500%
+}
+
   

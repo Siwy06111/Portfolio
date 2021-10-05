@@ -6,7 +6,7 @@ function App() {
     <div className="Wrapper">
       <div className="About"> 
         <div className="LeftSide"> 
-          <p>Hi! I'm Dawid, <br/>let me itroduce myself!</p>
+          <p>Hi! I'm Dawid, <br/>let me introduce myself!</p>
           <button className="AboutBtn">
            <p> Tell me about You </p>
            <i class="fas fa-arrow-down"></i>
@@ -15,8 +15,22 @@ function App() {
         <div className="RightSide">
            cos tam
         </div>
+        
       </div>
-
+    <div className="NavBar">
+          <ul>
+            <li></li>
+            
+            <li></li>
+            
+            <li> </li>
+           
+            <li> </li>
+           
+          </ul>
+             
+            
+        </div>
     </div>
   );
 }
