@@ -1,0 +1,50 @@
+.NavBar {
+  position: fixed;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+}
+.NavBar > ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.NavBar > ul > li {
+  width: 25px;
+  flex-basis: 20%;
+  border: 3px solid black;
+  transition: 0.2s ease-in-out;
+}
+
+.NavBar > ul > li:hover {
+  background-color: darkgray;
+  scale: 1.1;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+.NavBar > ul > li:hover::after {
+  display: block;
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -600%;
+  background-color: darkgray;
+  height: 50px;
+  min-width: 80px;
+  line-height: 50px;
+  border-radius: 20%;
+  text-align: center;
+  padding: 5px;
+}
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.NavBar > ul > li > .active {
+  background-color: darkgray;
+}

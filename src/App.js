@@ -1,36 +1,17 @@
-
-import './App.css';
-
+import HomePage from "./components/HomePage";
+import "./App.css";
+import Navbar from "./components/Navbar.js";
+import About from "./components/About.js";
 function App() {
   return (
     <div className="Wrapper">
-      <div className="About"> 
-        <div className="LeftSide"> 
-          <p>Hi! I'm Dawid, <br/>let me introduce myself!</p>
-          <button className="AboutBtn">
-           <p> Tell me about You </p>
-           <i class="fas fa-arrow-down"></i>
-           </button>
-        </div>
-        <div className="RightSide">
-           cos tam
-        </div>
-        
+      <div id="HomePage_Wrapper" className="HomePage_Wrapper">
+        <HomePage />
+        <Navbar />
       </div>
-    <div className="NavBar">
-          <ul>
-            <li></li>
-            
-            <li></li>
-            
-            <li> </li>
-           
-            <li> </li>
-           
-          </ul>
-             
-            
-        </div>
+      <div id="About_Wrapper">
+        <About />
+      </div>
     </div>
   );
 }
