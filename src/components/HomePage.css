@@ -11,7 +11,7 @@ div.HomePage {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 .LeftSide > .HomePageText {
   color: white;
@@ -27,6 +27,7 @@ div.HomePage {
   position: relative;
   transition: linear 0.1s;
 }
+
 .HomePageBtn > p,
 i {
   color: black;

@@ -1,0 +1,8 @@
+.hovered {
+  font-size: 15vh;
+}
+.HolderForTextofSpan {
+  flex-wrap: nowrap;
+  margin: 10px;
+  letter-spacing: 5px;
+}
